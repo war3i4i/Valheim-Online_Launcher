@@ -1,0 +1,14 @@
+D:\RiderProjects\Valheim-Online_Launcher\bin\Debug\Valheim_Online_Launcher.exe.config
+D:\RiderProjects\Valheim-Online_Launcher\bin\Debug\Valheim_Online_Launcher.exe
+D:\RiderProjects\Valheim-Online_Launcher\bin\Debug\Valheim_Online_Launcher.pdb
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim-Online_Launcher.csproj.AssemblyReference.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\MainWindow.baml
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\MainWindow.g.cs
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\App.g.cs
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim_Online_Launcher_MarkupCompile.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim_Online_Launcher.g.resources
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim_Online_Launcher.Properties.Resources.resources
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim-Online_Launcher.csproj.GenerateResource.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim-Online_Launcher.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim_Online_Launcher.exe
+D:\RiderProjects\Valheim-Online_Launcher\obj\Debug\Valheim_Online_Launcher.pdb

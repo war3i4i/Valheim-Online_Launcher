@@ -1,0 +1,198 @@
+﻿
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:av="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    mc:Ignorable="av"
+    x:Class="Valheim_Online_Launcher.MainWindow"
+    Title="Launcher"
+    Height="420"
+    Width="750"
+    Cursor="Arrow"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    AllowsTransparency="True"
+    Background="{x:Null}" Opacity="1" Icon="Resources/favicon.ico">
+    
+    <Window.Resources>
+        <Style x:Key="ImageFill" TargetType="{x:Type ProgressBar}">
+            <Setter Property="BorderThickness" Value="1"/> 
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ProgressBar}">
+                        <Grid x:Name="TemplateRoot" SnapsToDevicePixels="true">
+                            <Image x:Name="PART_Track" Source="Resources/test_progressbar.png" Margin="1" Stretch="Fill"/>
+                            <Image Source="Resources/test_progressbar_green.png" Margin="1" Stretch="Fill" Width="{TemplateBinding Value}" HorizontalAlignment="Left" Opacity="0.2"/>
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter> 
+        </Style>
+         
+    </Window.Resources> 
+    
+    <Grid Margin="0,0,0,0" MouseDown="Grid_MouseDown" MouseMove="Grid_MouseMove" MouseUp="Grid_MouseUp">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/image.png"/>
+        </Grid.Background>
+
+        <Button x:Name="button" Margin="0,6,8,0" VerticalAlignment="Top" Height="11" BorderThickness="0"
+                HorizontalAlignment="Right" Width="11" IsHitTestVisible="True" Cursor="Hand"
+                PreviewMouseLeftButtonUp="Button_Close">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <StackPanel>
+                        <Image x:Name="Close2" Source="Resources/x_hover.png" Stretch="Fill" Visibility="Collapsed" />
+                        <Image x:Name="Close1" Source="Resources/x.png" Stretch="Fill" Visibility="Visible" />
+                    </StackPanel> 
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="Close2" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="Close1" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Grid Name="StartButtonGrid">
+            <Button x:Name="StartGameBtn" HorizontalAlignment="Center" Margin="0,0,0,7" VerticalAlignment="Bottom"
+                    Width="160" Height="51" Click="StartGameBtn_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel>
+                            <Image x:Name="Close2" Source="Resources/start_hover.png" Stretch="Fill" Visibility="Collapsed" />
+                            <Image x:Name="Close1" Source="Resources/start.png" Stretch="Fill" Visibility="Visible" />
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="Close2" Property="Visibility" Value="Visible" />
+                                <Setter TargetName="Close1" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            
+            <Button x:Name="FullCheck" HorizontalAlignment="Left" Margin="8,0,0,10" VerticalAlignment="Bottom"
+                    Width="32" Height="32" Click="StartGameBtn_Click_Full">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel>
+                            <Image x:Name="Close2" Source="Resources/service_green.png" Stretch="Fill" Visibility="Collapsed" />
+                            <Image x:Name="Close1" Source="Resources/service.png" Stretch="Fill" Visibility="Visible" />
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="Close2" Property="Visibility" Value="Visible" />
+                                <Setter TargetName="Close1" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+                <Popup AllowsTransparency="True" VerticalOffset="-5" IsOpen="{Binding IsMouseOver, ElementName=FullCheck, Mode=OneWay}" PlacementTarget="{Binding ElementName=FullCheck}" Placement="Top">
+                    <TextBlock Foreground="Azure" >
+                        Полная проверка
+                    </TextBlock>
+                </Popup>
+                 
+            </Button>
+            
+            <Button x:Name="Discord" HorizontalAlignment="Left" Margin="44,0,0,10" VerticalAlignment="Bottom"
+                    Width="32" Height="32" Click="DiscordButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel>
+                            <Image x:Name="Close2" Source="Resources/discord_icon_green.png" Stretch="Fill" Visibility="Collapsed" />
+                            <Image x:Name="Close1" Source="Resources/discord_icon.png" Stretch="Fill" Visibility="Visible" />
+                        </StackPanel>
+                        <ControlTemplate.Triggers> 
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="Close2" Property="Visibility" Value="Visible" />
+                                <Setter TargetName="Close1" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+                <Popup AllowsTransparency="True" VerticalOffset="-5" IsOpen="{Binding IsMouseOver, ElementName=Discord, Mode=OneWay}" PlacementTarget="{Binding ElementName=Discord}" Placement="Top">
+                    <TextBlock Foreground="Azure" >
+                        Дискорд
+                    </TextBlock>
+                </Popup>
+            </Button>
+            
+            <Button x:Name="Website" HorizontalAlignment="Left" Margin="80,0,0,10" VerticalAlignment="Bottom" 
+                    Width="32" Height="32" Click="SiteButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel>
+                            <Image x:Name="Close2" Source="Resources/website_green.png" Stretch="Fill" Visibility="Collapsed" />
+                            <Image x:Name="Close1" Source="Resources/website.png" Stretch="Fill" Visibility="Visible" />
+                        </StackPanel>
+                        <ControlTemplate.Triggers> 
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="Close2" Property="Visibility" Value="Visible" />
+                                <Setter TargetName="Close1" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+                <Popup AllowsTransparency="True" VerticalOffset="-5" IsOpen="{Binding IsMouseOver, ElementName=Website, Mode=OneWay}" PlacementTarget="{Binding ElementName=Website}" Placement="Top">
+                    <TextBlock Foreground="Azure" >
+                        Сайт
+                    </TextBlock>
+                </Popup>
+            </Button>
+            
+            
+            
+        </Grid>
+       
+        <Button x:Name="minimaze_btn"  Margin="0,6,25,0" VerticalAlignment="Top" Height="11" BorderThickness="0"
+                HorizontalAlignment="Right" Width="11" IsHitTestVisible="True" Cursor="Hand" Click="Minimize"
+                RenderTransformOrigin="2.656,2.167">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <StackPanel>
+                        <Image x:Name="Close2" Source="Resources/minimaze.bmp" Stretch="Fill" Visibility="Collapsed" />
+                        <Image x:Name="Close1" Source="Resources/minimaze_hover.bmp" Stretch="Fill"
+                               Visibility="Visible" />
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="Close2" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="Close1" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        <Grid Name="NewsGrid">
+            <Image Source="Resources/Paperblack.png" Width="255" Height="319" Stretch="Fill" Margin="0,41,13,0" VerticalAlignment="Top" HorizontalAlignment="Right"></Image>
+            <Image Source="Resources/Paperblackwhite.png" Width="251" Height="315" Stretch="Fill" Margin="0,43,15,0" VerticalAlignment="Top" HorizontalAlignment="Right"></Image>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Right" Width="250" Height="300" Margin="0,50,17,0" VerticalAlignment="Top">
+                <StackPanel x:Name="ServerList" IsHitTestVisible="False" Margin="5,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock Name="News" TextWrapping="Wrap" Margin="5,5,5,5" FontStyle="Normal" FontSize="16" Foreground="Azure">
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+      
+        <Grid Name="ProgressBarGrid" Width="432" Height="70" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20,0,0,65">
+            <ProgressBar x:Name="progressbar" Value="100" Maximum="{Binding Width, ElementName=ProgressBarGrid}" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="0,0,0,0" Style="{StaticResource ImageFill}"/>
+            <Label x:Name="totalpercent" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,0,0,-1" VerticalAlignment="Bottom"
+                   FontSize="9" Foreground="#FFE6E6E6"/> 
+            <TextBlock x:Name="currenttask" HorizontalAlignment="Stretch" Margin="0,0,0, 25" TextAlignment="Center"  VerticalAlignment="Bottom" Foreground="White" FontSize="16" FontStyle="Oblique" Height="40" TextWrapping="Wrap"/>
+        </Grid>
+        
+       <!-- <Label Width="200" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" FontSize="20" Foreground="Chocolate">@k1llinggod</Label>
+        <Image Source="Resources/discord.png" Width="48" Height="48" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,130,5"></Image>
+        !-->
+        <Border BorderThickness="2" BorderBrush="Chocolate" />
+    </Grid>
+</Window>

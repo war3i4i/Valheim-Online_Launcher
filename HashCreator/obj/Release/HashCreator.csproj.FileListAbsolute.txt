@@ -1,0 +1,6 @@
+D:\RiderProjects\Valheim-Online_Launcher\HashCreator\bin\Release\HashCreator.exe
+D:\RiderProjects\Valheim-Online_Launcher\HashCreator\bin\Release\HashCreator.pdb
+D:\RiderProjects\Valheim-Online_Launcher\HashCreator\obj\Release\HashCreator.csproj.AssemblyReference.cache
+D:\RiderProjects\Valheim-Online_Launcher\HashCreator\obj\Release\HashCreator.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Valheim-Online_Launcher\HashCreator\obj\Release\HashCreator.exe
+D:\RiderProjects\Valheim-Online_Launcher\HashCreator\obj\Release\HashCreator.pdb

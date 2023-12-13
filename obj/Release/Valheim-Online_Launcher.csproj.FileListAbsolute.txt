@@ -1,0 +1,15 @@
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim-Online_Launcher.csproj.AssemblyReference.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\MainWindow.baml
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\MainWindow.g.cs
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\App.g.cs
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim_Online_Launcher.Properties.Resources.resources
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim-Online_Launcher.csproj.GenerateResource.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim-Online_Launcher.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\App.baml
+D:\RiderProjects\Valheim-Online_Launcher\bin\Release\Valheim Online Launcher.exe.config
+D:\RiderProjects\Valheim-Online_Launcher\bin\Release\Valheim Online Launcher.exe
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim Online Launcher_Content.g.cs
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim Online Launcher_MarkupCompile.cache
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim Online Launcher_MarkupCompile.lref
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim Online Launcher.g.resources
+D:\RiderProjects\Valheim-Online_Launcher\obj\Release\Valheim Online Launcher.exe
