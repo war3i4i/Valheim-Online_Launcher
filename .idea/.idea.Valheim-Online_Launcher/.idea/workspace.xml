@@ -4,8 +4,20 @@
     <projectFile>HashCreator/HashCreator.csproj</projectFile>
     <projectFile>Valheim-Online_Launcher.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8965d116-bb82-423b-9812-d62993fd82fc" name="Changes" comment="" />
+    <list default="true" id="8965d116-bb82-423b-9812-d62993fd82fc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Valheim-Online_Launcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Valheim-Online_Launcher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Valheim-Online_Launcher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Valheim-Online_Launcher.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Release/Valheim Online Launcher.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Release/Valheim Online Launcher.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/App.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/App.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Valheim Online Launcher.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/Valheim Online Launcher.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Valheim Online Launcher.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Release/Valheim Online Launcher.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Valheim Online Launcher_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Release/Valheim Online Launcher_MarkupCompile.lref" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,23 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Killing God\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Killing God\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Killing God\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Killing God\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Killing God\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Killing God\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Valheim-Online_Launcher">
     <configuration name="HashCreator" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -89,7 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1702473677745</updated>
       <workItem from="1702473679462" duration="127000" />
-      <workItem from="1702473848375" duration="31000" />
+      <workItem from="1702473848375" duration="426000" />
+      <workItem from="1702550939905" duration="56000" />
     </task>
     <servers />
   </component>
